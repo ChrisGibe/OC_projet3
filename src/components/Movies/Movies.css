@@ -1,0 +1,10 @@
+.movies {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+}

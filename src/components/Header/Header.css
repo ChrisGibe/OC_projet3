@@ -1,0 +1,11 @@
+.main-header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header a {
+  color: white;
+  text-decoration: none;
+}

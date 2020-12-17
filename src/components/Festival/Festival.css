@@ -1,0 +1,56 @@
+.section-first h2{
+    font-size: 2.5em;
+    text-align: center;
+}
+
+.container-section-first {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.description {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.description h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.description p {
+    text-align: justify;
+}
+
+.container-carousel {
+    display: contents;
+    justify-content: center;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+
+@media screen and (max-width: 960px) {
+    .container-section-first {
+        flex-direction: column;
+    }
+
+    .container-carousel {
+        display: contents;
+    }
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+    }
+
+    .description {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
