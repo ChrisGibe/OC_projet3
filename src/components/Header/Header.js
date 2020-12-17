@@ -1,8 +1,9 @@
 import {Link } from 'gatsby';
 import {Trans} from 'gatsby-plugin-react-i18next';
 import PropTypes from 'prop-types';
-import './header.css';
 import React from 'react';
+
+import './Header.css';
 
 const Header = ({siteTitle}) => {
   return (
