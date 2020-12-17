@@ -3,6 +3,9 @@ import React from "react";
 import "./Form.css";
 
 const Form = () => {
+  const onSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <>
       <h2>Préinscription</h2>
@@ -58,7 +61,7 @@ const Form = () => {
             </div>
             <div className="full flex flex-end">
               <button className="btn btn-secondary">Annuler les modifications</button>
-              <button className="btn btn-primary" type="submit">Enregistrer mes modifications</button>
+              <button className="btn btn-primary" type="submit" onClick={onSubmit}>Enregistrer mes modifications</button>
             </div>
           </form>
         </div>
