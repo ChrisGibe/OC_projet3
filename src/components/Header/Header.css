@@ -9,3 +9,32 @@
   color: white;
   text-decoration: none;
 }
+
+h1 {
+  color: #FFF;
+  font-family: Arial;
+  font-size: 3.5em;
+  position: absolute;
+  left: 50px;
+  top: 200px;
+}
+
+span {
+  font-family: Arial;
+  font-size: 1.8em;
+  position: absolute;
+  left: 53px;
+  top: 300px;
+  color: #FFF;
+}
+
+.img-container {
+  width: 100%;
+}
+
+@media screen and (max-width: 680px) {
+  h1 {
+    left: 10px;
+    top: 20px;
+  }
+}

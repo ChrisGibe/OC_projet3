@@ -22,7 +22,7 @@ const IndexPage = ({
   .map((edge) => <PostLink key={edge.node.id} post={edge.node} />);
   return (
     <Layout>
-      <SEO title={t('Accueil')} />
+      <SEO description={t('Festival de film en plein air au parc Monaceau Paris')} title={t('Accueil')} />
       <Festival />
       <News posts={Posts}/>
       <Movies />

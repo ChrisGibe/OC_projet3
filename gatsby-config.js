@@ -3,9 +3,9 @@ const {languages, defaultLanguage} = require('./languages');
 module.exports = {
   siteMetadata: {
     title: `Festival des films en plein air`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
-    siteUrl: 'https://kind-lichterman-5edcb4.netlify.app'
+    description: `Festival de film en plein air au parc Monaceau Paris`,
+    author: `GIBELLI Christophe`,
+    siteUrl: 'https://films-festival.netlify.app/'
   },
   plugins: [
     {
@@ -45,7 +45,7 @@ module.exports = {
         languages,
         defaultLanguage,
         path: `${__dirname}/locales`,
-        siteUrl: 'https://kind-lichterman-5edcb4.netlify.app',
+        siteUrl: 'https://films-festival.netlify.app/',
         i18nextOptions: {
           debug: true,
           lowerCaseLng: true,

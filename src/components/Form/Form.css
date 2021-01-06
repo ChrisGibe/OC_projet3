@@ -9,6 +9,7 @@
 }
 
 .card-form {
+  border: 2px solid #000;
   border-radius: 4px;
   width: 1028px;
   max-width: calc(100% - 20px);
@@ -109,7 +110,7 @@
   margin-right: 8px;
 }
 
-.btn {
+.btn-form {
   border: none;
   color: #fff;
   font-weight: 500;

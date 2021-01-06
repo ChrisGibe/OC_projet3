@@ -38,7 +38,7 @@ class Navbar extends Component {
                         })
                     }
                 </ul>
-                <Button><Trans>Préinscription</Trans></Button>
+                <Button onClick={() => {window.location.href=MenuItems[3].url}}><Trans>Préinscription</Trans></Button>
                 <Languages />
             </nav>
         )

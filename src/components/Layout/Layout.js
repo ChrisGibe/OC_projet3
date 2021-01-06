@@ -20,8 +20,8 @@ const Layout = ({children}) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <NavBar />
+      <Header siteTitle={data.site.siteMetadata.title} />
       <div
         style={{
           margin: `0 auto`,

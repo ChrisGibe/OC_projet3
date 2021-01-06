@@ -3,15 +3,12 @@ import React from "react";
 import "./Form.css";
 
 const Form = () => {
-  const onSubmit = (e) => {
-    e.preventDefault();
-  };
   return (
     <>
       <h2>Préinscription</h2>
       <div id="inscription" className="page">
         <div className="card-form">
-          <div className="card-title">Modifier mon profil</div>
+          <div className="card-title">Remplir le formulaire</div>
           <form className="grid" name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
             {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
             <input type="hidden" name="form-name" value="contact" />
@@ -21,7 +18,7 @@ const Form = () => {
               </label>
             </div>
             <div className="form-group">
-              <label className="label" htmlFor={"name"}>
+              <label className="label" htmlFor={"lastname"} required={true}>
                 Nom
               </label>
               <input type="text" id="lastname" name="lastname" className="form-control" required={true} />
@@ -78,7 +75,7 @@ const Form = () => {
               </select>
             </div>
             <div className="full flex flex-end">
-              <button className="btn btn-primary" type="submit">
+              <button className="btn-form btn-primary" type="submit">
                 Valider
               </button>
             </div>

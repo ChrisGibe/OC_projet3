@@ -17,7 +17,7 @@ const MovieCard = ({ title, date, realisator, scenario, actors, kind, duration, 
 
   return (
     <div>
-      <button className="btn-open" style={{ backgroundImage: `url(${image})`}} onClick={openModal}></button>
+      <button type="button" aria-label={`Open ${title} modal`} className="btn-open" style={{ backgroundImage: `url(${image})`}} onClick={openModal}></button>
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal} className="modal" contentLabel="Example Modal">
         <h2>{title}</h2>
         <button className="btn-modal-close" onClick={closeModal}>

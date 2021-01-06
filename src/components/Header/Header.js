@@ -1,33 +1,43 @@
-import {Link } from 'gatsby';
-import {Trans} from 'gatsby-plugin-react-i18next';
-import PropTypes from 'prop-types';
-import React from 'react';
+import { useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { Trans } from "gatsby-plugin-react-i18next";
+import PropTypes from "prop-types";
+import React from "react";
 
-import './Header.css';
+import "./Header.css";
 
-const Header = ({siteTitle}) => {
+const Header = ({ siteTitle }) => {
+  const data = useStaticQuery(graphql`
+    {
+      file(name: { eq: "header" }, extension: { eq: "jpg" }) {
+        id
+        childImageSharp {
+          fluid(maxWidth: 2500, maxHeight: 800) {
+            ...GatsbyImageSharpFluid
+          }
+        }
+      }
+    }
+  `);
   return (
     <header className="main-header">
-      <h1 style={{textAlign: `center`}}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`
-          }}>
+      <div className="img-container">
+      <Img fluid={data.file.childImageSharp.fluid} alt="" />
+      </div>
+      <h1 style={{ textAlign: `center` }}>
           <Trans>{siteTitle}</Trans>
-        </Link>
       </h1>
+      <span><Trans>Du 5 au 8 août, parc Monceau Paris</Trans></span>
     </header>
   );
 };
 
 Header.propTypes = {
-  siteTitle: PropTypes.string
+  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {
-  siteTitle: ``
+  siteTitle: ``,
 };
 
 export default Header;
